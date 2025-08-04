@@ -370,63 +370,57 @@ class UPSTrapDecoder {
         return value;
     }
 
-    identifyUPSAlert(oid, value) {
-        // Identificar tipos de alerta baseado no OID e valor
-        
-        // Bateria baixa
-        if (oid === '1.3.6.1.2.1.33.1.2.1' && value === 3) {
-            return {
-                type: 'BATTERY_LOW',
-                severity: 'WARNING',
-                description: '🔋 BATERIA BAIXA - No-break operando com bateria fraca'
-            };
-        }
-        
-        // Bateria esgotada
-        if (oid === '1.3.6.1.2.1.33.1.2.1' && value === 4) {
-            return {
-                type: 'BATTERY_DEPLETED', 
-                severity: 'CRITICAL',
-                description: '🔋 BATERIA ESGOTADA - No-break vai desligar em breve'
-            };
-        }
-        
-        // Operando na bateria
-        if (oid === '1.3.6.1.2.1.33.1.4.1' && value === 5) {
-            return {
-                type: 'ON_BATTERY',
-                severity: 'WARNING', 
-                description: '⚡ FALTA DE ENERGIA - No-break operando na bateria'
-            };
-        }
-        
-        // Traps específicos APC
-        if (oid === '1.3.6.1.4.1.318.0.1') {
-            return {
-                type: 'APC_ON_BATTERY',
-                severity: 'WARNING',
-                description: '⚡ APC: No-break mudou para bateria (falta energia elétrica)'
-            };
-        }
-        
-        if (oid === '1.3.6.1.4.1.318.0.2') {
-            return {
-                type: 'APC_LOW_BATTERY', 
-                severity: 'CRITICAL',
-                description: '🔋 APC: Bateria baixa - energia limitada restante'
-            };
-        }
-        
-        if (oid === '1.3.6.1.4.1.318.0.3') {
-            return {
-                type: 'APC_POWER_RESTORED',
-                severity: 'INFO',
-                description: '✅ APC: Energia elétrica restaurada'
-            };
-        }
-        
-        return null;
+   identifyUPSAlert(oid, value) {
+    // Alertas conhecidos
+    if (oid === '1.3.6.1.2.1.33.1.2.1' && value === 3) {
+        return {
+            type: 'BATTERY_LOW',
+            severity: 'WARNING',
+            description: '🔋 BATERIA BAIXA - No-break operando com bateria fraca'
+        };
     }
+    if (oid === '1.3.6.1.2.1.33.1.2.1' && value === 4) {
+        return {
+            type: 'BATTERY_DEPLETED', 
+            severity: 'CRITICAL',
+            description: '🔋 BATERIA ESGOTADA - No-break vai desligar em breve'
+        };
+    }
+    if (oid === '1.3.6.1.2.1.33.1.4.1' && value === 5) {
+        return {
+            type: 'ON_BATTERY',
+            severity: 'WARNING', 
+            description: '⚡ FALTA DE ENERGIA - No-break operando na bateria'
+        };
+    }
+    if (oid === '1.3.6.1.4.1.318.0.1') {
+        return {
+            type: 'APC_ON_BATTERY',
+            severity: 'WARNING',
+            description: '⚡ APC: No-break mudou para bateria (falta energia elétrica)'
+        };
+    }
+    if (oid === '1.3.6.1.4.1.318.0.2') {
+        return {
+            type: 'APC_LOW_BATTERY', 
+            severity: 'CRITICAL',
+            description: '🔋 APC: Bateria baixa - energia limitada restante'
+        };
+    }
+    if (oid === '1.3.6.1.4.1.318.0.3') {
+        return {
+            type: 'APC_POWER_RESTORED',
+            severity: 'INFO',
+            description: '✅ APC: Energia elétrica restaurada'
+        };
+    }
+    // Se não reconhecer, retorne mensagem simples
+    return {
+        type: 'UNKNOWN',
+        severity: 'INFO',
+        description: '✅ No-break status OK - trap genérico recebido sem alertas'
+    };
+}
 
     manualHexAnalysis(buffer, metadata) {
         console.log('\n🔍 === ANÁLISE MANUAL HEX ===');
