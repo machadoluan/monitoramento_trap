@@ -1,0 +1,118 @@
+[2025-07-31T20:09:16.636Z] ERRO: bind EACCES 0.0.0.0:162
+
+[2025-08-01T13:09:49.227Z] {
+  "id": 1,
+  "timestamp": "2025-08-01T13:09:49.225Z",
+  "sender": "200.10.4.74",
+  "port": 63520,
+  "size": 449,
+  "type": "UDP_TEXT",
+  "content": "SNMP TRAP DATA - TRAP #1\r\nTimestamp: 2025-08-01 10:09:49\r\nSource: ASSIST04\r\nCommunity: public\r\nEnterprise-OID: 1.3.6.1.4.1.99999\r\nSpecific-Trap: 1\r\nAgent-Address: ASSIST04\r\nTime-Stamp: 638896397891529925\r\nVariable-Bindings:\r\n  OID: 1.3.6.1.4.1.99999.1.1 = Sistema Windows conectado via PowerShell\r\n  OID: 1.3.6.1.4.1.99999.1.2 = ASSIST04\r\n  OID: 1.3.6.1.4.1.99999.1.3 = 2025-08-01 10:09:49\r\n  OID: 1.3.6.1.4.1.99999.1.4 = TrapNumber-1\r\nEND-TRAP-DATA"
+}
+
+[2025-08-01T13:09:51.245Z] {
+  "id": 2,
+  "timestamp": "2025-08-01T13:09:51.244Z",
+  "sender": "200.10.4.74",
+  "port": 63521,
+  "size": 442,
+  "type": "UDP_TEXT",
+  "content": "SNMP TRAP DATA - TRAP #2\r\nTimestamp: 2025-08-01 10:09:51\r\nSource: ASSIST04\r\nCommunity: public\r\nEnterprise-OID: 1.3.6.1.4.1.99999\r\nSpecific-Trap: 2\r\nAgent-Address: ASSIST04\r\nTime-Stamp: 638896397911941730\r\nVariable-Bindings:\r\n  OID: 1.3.6.1.4.1.99999.1.1 = CPU utilization high - 85 percent\r\n  OID: 1.3.6.1.4.1.99999.1.2 = ASSIST04\r\n  OID: 1.3.6.1.4.1.99999.1.3 = 2025-08-01 10:09:51\r\n  OID: 1.3.6.1.4.1.99999.1.4 = TrapNumber-2\r\nEND-TRAP-DATA"
+}
+
+[2025-08-01T13:09:53.258Z] {
+  "id": 3,
+  "timestamp": "2025-08-01T13:09:53.257Z",
+  "sender": "200.10.4.74",
+  "port": 51575,
+  "size": 448,
+  "type": "UDP_TEXT",
+  "content": "SNMP TRAP DATA - TRAP #3\r\nTimestamp: 2025-08-01 10:09:53\r\nSource: ASSIST04\r\nCommunity: public\r\nEnterprise-OID: 1.3.6.1.4.1.99999\r\nSpecific-Trap: 3\r\nAgent-Address: ASSIST04\r\nTime-Stamp: 638896397932020894\r\nVariable-Bindings:\r\n  OID: 1.3.6.1.4.1.99999.1.1 = Memory usage critical - 90 percent used\r\n  OID: 1.3.6.1.4.1.99999.1.2 = ASSIST04\r\n  OID: 1.3.6.1.4.1.99999.1.3 = 2025-08-01 10:09:53\r\n  OID: 1.3.6.1.4.1.99999.1.4 = TrapNumber-3\r\nEND-TRAP-DATA"
+}
+
+[2025-08-01T13:09:55.263Z] {
+  "id": 4,
+  "timestamp": "2025-08-01T13:09:55.262Z",
+  "sender": "200.10.4.74",
+  "port": 51576,
+  "size": 454,
+  "type": "UDP_TEXT",
+  "content": "SNMP TRAP DATA - TRAP #4\r\nTimestamp: 2025-08-01 10:09:55\r\nSource: ASSIST04\r\nCommunity: public\r\nEnterprise-OID: 1.3.6.1.4.1.99999\r\nSpecific-Trap: 4\r\nAgent-Address: ASSIST04\r\nTime-Stamp: 638896397952108854\r\nVariable-Bindings:\r\n  OID: 1.3.6.1.4.1.99999.1.1 = Disk space warning - C: drive 95 percent full\r\n  OID: 1.3.6.1.4.1.99999.1.2 = ASSIST04\r\n  OID: 1.3.6.1.4.1.99999.1.3 = 2025-08-01 10:09:55\r\n  OID: 1.3.6.1.4.1.99999.1.4 = TrapNumber-4\r\nEND-TRAP-DATA"
+}
+
+[2025-08-01T13:09:57.269Z] {
+  "id": 5,
+  "timestamp": "2025-08-01T13:09:57.269Z",
+  "sender": "200.10.4.74",
+  "port": 51577,
+  "size": 445,
+  "type": "UDP_TEXT",
+  "content": "SNMP TRAP DATA - TRAP #5\r\nTimestamp: 2025-08-01 10:09:57\r\nSource: ASSIST04\r\nCommunity: public\r\nEnterprise-OID: 1.3.6.1.4.1.99999\r\nSpecific-Trap: 5\r\nAgent-Address: ASSIST04\r\nTime-Stamp: 638896397972141108\r\nVariable-Bindings:\r\n  OID: 1.3.6.1.4.1.99999.1.1 = Test sequence completed successfully\r\n  OID: 1.3.6.1.4.1.99999.1.2 = ASSIST04\r\n  OID: 1.3.6.1.4.1.99999.1.3 = 2025-08-01 10:09:57\r\n  OID: 1.3.6.1.4.1.99999.1.4 = TrapNumber-5\r\nEND-TRAP-DATA"
+}
+
+[2025-08-01T13:16:36.961Z] {
+  "id": 1,
+  "timestamp": "2025-08-01T13:16:36.959Z",
+  "sender": "200.10.4.74",
+  "port": 64221,
+  "size": 449,
+  "type": "UDP_TEXT",
+  "content": "SNMP TRAP DATA - TRAP #1\r\nTimestamp: 2025-08-01 10:16:36\r\nSource: ASSIST04\r\nCommunity: public\r\nEnterprise-OID: 1.3.6.1.4.1.99999\r\nSpecific-Trap: 1\r\nAgent-Address: ASSIST04\r\nTime-Stamp: 638896401968942779\r\nVariable-Bindings:\r\n  OID: 1.3.6.1.4.1.99999.1.1 = Sistema Windows conectado via PowerShell\r\n  OID: 1.3.6.1.4.1.99999.1.2 = ASSIST04\r\n  OID: 1.3.6.1.4.1.99999.1.3 = 2025-08-01 10:16:36\r\n  OID: 1.3.6.1.4.1.99999.1.4 = TrapNumber-1\r\nEND-TRAP-DATA"
+}
+
+[2025-08-01T13:16:38.974Z] {
+  "id": 2,
+  "timestamp": "2025-08-01T13:16:38.973Z",
+  "sender": "200.10.4.74",
+  "port": 53644,
+  "size": 442,
+  "type": "UDP_TEXT",
+  "content": "SNMP TRAP DATA - TRAP #2\r\nTimestamp: 2025-08-01 10:16:38\r\nSource: ASSIST04\r\nCommunity: public\r\nEnterprise-OID: 1.3.6.1.4.1.99999\r\nSpecific-Trap: 2\r\nAgent-Address: ASSIST04\r\nTime-Stamp: 638896401989144369\r\nVariable-Bindings:\r\n  OID: 1.3.6.1.4.1.99999.1.1 = CPU utilization high - 85 percent\r\n  OID: 1.3.6.1.4.1.99999.1.2 = ASSIST04\r\n  OID: 1.3.6.1.4.1.99999.1.3 = 2025-08-01 10:16:38\r\n  OID: 1.3.6.1.4.1.99999.1.4 = TrapNumber-2\r\nEND-TRAP-DATA"
+}
+
+[2025-08-01T13:16:41.054Z] {
+  "id": 3,
+  "timestamp": "2025-08-01T13:16:41.053Z",
+  "sender": "200.10.4.74",
+  "port": 53645,
+  "size": 448,
+  "type": "UDP_TEXT",
+  "content": "SNMP TRAP DATA - TRAP #3\r\nTimestamp: 2025-08-01 10:16:41\r\nSource: ASSIST04\r\nCommunity: public\r\nEnterprise-OID: 1.3.6.1.4.1.99999\r\nSpecific-Trap: 3\r\nAgent-Address: ASSIST04\r\nTime-Stamp: 638896402010025044\r\nVariable-Bindings:\r\n  OID: 1.3.6.1.4.1.99999.1.1 = Memory usage critical - 90 percent used\r\n  OID: 1.3.6.1.4.1.99999.1.2 = ASSIST04\r\n  OID: 1.3.6.1.4.1.99999.1.3 = 2025-08-01 10:16:41\r\n  OID: 1.3.6.1.4.1.99999.1.4 = TrapNumber-3\r\nEND-TRAP-DATA"
+}
+
+[2025-08-01T13:16:43.072Z] {
+  "id": 4,
+  "timestamp": "2025-08-01T13:16:43.071Z",
+  "sender": "200.10.4.74",
+  "port": 53668,
+  "size": 454,
+  "type": "UDP_TEXT",
+  "content": "SNMP TRAP DATA - TRAP #4\r\nTimestamp: 2025-08-01 10:16:43\r\nSource: ASSIST04\r\nCommunity: public\r\nEnterprise-OID: 1.3.6.1.4.1.99999\r\nSpecific-Trap: 4\r\nAgent-Address: ASSIST04\r\nTime-Stamp: 638896402030144011\r\nVariable-Bindings:\r\n  OID: 1.3.6.1.4.1.99999.1.1 = Disk space warning - C: drive 95 percent full\r\n  OID: 1.3.6.1.4.1.99999.1.2 = ASSIST04\r\n  OID: 1.3.6.1.4.1.99999.1.3 = 2025-08-01 10:16:43\r\n  OID: 1.3.6.1.4.1.99999.1.4 = TrapNumber-4\r\nEND-TRAP-DATA"
+}
+
+[2025-08-01T13:16:45.086Z] {
+  "id": 5,
+  "timestamp": "2025-08-01T13:16:45.085Z",
+  "sender": "200.10.4.74",
+  "port": 53669,
+  "size": 445,
+  "type": "UDP_TEXT",
+  "content": "SNMP TRAP DATA - TRAP #5\r\nTimestamp: 2025-08-01 10:16:45\r\nSource: ASSIST04\r\nCommunity: public\r\nEnterprise-OID: 1.3.6.1.4.1.99999\r\nSpecific-Trap: 5\r\nAgent-Address: ASSIST04\r\nTime-Stamp: 638896402050306820\r\nVariable-Bindings:\r\n  OID: 1.3.6.1.4.1.99999.1.1 = Test sequence completed successfully\r\n  OID: 1.3.6.1.4.1.99999.1.2 = ASSIST04\r\n  OID: 1.3.6.1.4.1.99999.1.3 = 2025-08-01 10:16:45\r\n  OID: 1.3.6.1.4.1.99999.1.4 = TrapNumber-5\r\nEND-TRAP-DATA"
+}
+
+[2025-08-04T10:31:48.708Z] {
+  "id": 1,
+  "timestamp": "2025-08-04T10:31:48.708Z",
+  "type": "SNMP_BINARY",
+  "hex": "304302010104067075626c6963a736020100020100020100302b301006082b06010201010300430430734d1c3017060a2b06010603010104010006092b0601060301010501",
+  "size": 69
+}
+
+[2025-08-04T10:32:35.474Z] {
+  "id": 2,
+  "timestamp": "2025-08-04T10:32:35.474Z",
+  "type": "SNMP_BINARY",
+  "hex": "304302010104067075626c6963a736020100020100020100302b301006082b06010201010300430430735f143017060a2b06010603010104010006092b0601060301010501",
+  "size": 69
+}
+
